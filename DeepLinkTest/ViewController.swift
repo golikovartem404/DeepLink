@@ -38,6 +38,16 @@ class ViewController: UIViewController {
         return label
     }()
 
+    private lazy var testTestLabel: UILabel = {
+        let label = UILabel()
+        label.text = "testTestLabel"
+        label.textColor = .black
+        label.font = UIFont.systemFont(ofSize: 20, weight: .bold)
+        label.textAlignment = .center
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemYellow
